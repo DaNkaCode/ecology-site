@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    object-fit: cover;
+    object-position: top;
+
+    filter: hue-rotate(-145deg);
+    opacity: 0.2;
+}
+
+.nav {
+    padding: 15px;
+    background-color: white;
+    width: fit-content;
+    height: 100dvh;
+}
+
+.nav__btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.nav__btn {
+    width: 40px;
+}
+
+.nav__btn-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    color: rgb(119, 216, 54);
+
+    transition: transform 0.1s ease-in-out;
+
+    &::after {
+        content: attr(data-title);
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+
+    &:visited {
+        color: rgb(119, 216, 54);
+    }
+
+    &:hover img {
+        transform: rotate(15deg) translateX(15px);
+    }
+}
+
+.nav__btn-image {
+    width: 100%;
+    flex-grow: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 400px) {
+    .nav {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .nav__btns {
+        flex-direction: row;
+    }
+
+    .nav__btn {
+        margin: 0 auto;
+    }
+
+    .nav__btn-link::after {
+        content: none;
+    }
+}
+
+
+/* сделать чтобы боковое меню перемещалось наверх (отловить ширину) и все элементы выравнивались по центру, а подписи кнопок скрывались */
