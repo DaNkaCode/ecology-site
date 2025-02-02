@@ -153,7 +153,6 @@ main > section {
 
 .header__image-text {
     color: white;
-    
 }
 
 .header__image-src {
@@ -226,6 +225,37 @@ main > section {
 }
 
 /* Plants section end */
+
+/* Ecology section start */
+.ecology__items {
+    display: flex;
+}
+
+.item.ecology__item {
+    position: relative;
+    overflow: hidden;
+    
+    &::after {
+        content: attr(data-center-text);
+
+        font-size: 25px;
+        font-weight: 800;
+        color: white;
+        text-shadow: 0 0 2px black;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/* Ecology section end */
 
 
 @media screen and (max-width: 400px) {
