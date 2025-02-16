@@ -1,261 +1,265 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
 }
 
 html {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .bg-image {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-  object-fit: cover;
-  object-position: top;
+    object-fit: cover;
+    object-position: top;
 
-  filter: hue-rotate(-145deg);
-  opacity: 0.2;
+    filter: hue-rotate(-145deg);
+    opacity: 0.2;
 }
 
 .container {
-  width: calc(100dvw - 70px);
-  margin-left: auto;
+    width: calc(100dvw - 70px);
+    margin-left: auto;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 
-  & > span {
-    display: inline-block;
-    width: 30px;
-  }
+    & > span {
+        display: inline-block;
+        width: 30px;
+    }
 }
 
 main > section {
-  margin-top: 100px;
+    margin-top: 100px;
+}
+
+html:not(footer) main > section:last-of-type {
+    padding-bottom: 10px;
 }
 
 /* Nav start */
 .nav {
-  padding: 15px;
-  background-color: white;
-  filter: drop-shadow(0px 0px 5px gray);
-  width: 70px;
-  height: 100dvh;
+    padding: 15px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 5px gray);
+    width: 70px;
+    height: 100dvh;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .nav__btns {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .nav__btn {
-  width: 40px;
+    width: 40px;
 }
 
 .nav__btn-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  text-decoration: none;
-  color: rgb(119, 216, 54);
-
-  transition: transform 0.1s ease-in-out;
-
-  &::after {
-    content: attr(data-title);
-  }
-
-  &:active {
-    transform: scale(1.05);
-  }
-
-  &:visited {
+    text-decoration: none;
     color: rgb(119, 216, 54);
-  }
 
-  &:hover img {
-    transform: rotate(15deg) translateX(15px);
-  }
+    transition: transform 0.1s ease-in-out;
+
+    &::after {
+        content: attr(data-title);
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+
+    &:visited {
+        color: rgb(119, 216, 54);
+    }
+
+    &:hover img {
+        transform: rotate(15deg) translateX(15px);
+    }
 }
 
 .nav__btn-image {
-  width: 100%;
-  flex-grow: 0;
-  transition: transform 0.2s ease-in-out;
+    width: 100%;
+    flex-grow: 0;
+    transition: transform 0.2s ease-in-out;
 }
 /* Nav end */
 
 /* Header start */
 .header__title {
-  width: fit-content;
-  margin: 0 auto 100px;
-  padding-block: 15px;
-  padding-inline: 35px;
+    width: fit-content;
+    margin: 0 auto 100px;
+    padding-block: 15px;
+    padding-inline: 35px;
 
-  background-color: white;
-  color: rgb(154, 183, 255);
+    background-color: white;
+    color: rgb(154, 183, 255);
 
-  font-size: 25px;
+    font-size: 25px;
 
-  border-radius: 8px;
-  filter: drop-shadow(0px 0px 7px gray);
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 7px gray);
 }
 
 .header__facts {
-  display: flex;
-  height: 45dvh;
+    display: flex;
+    height: 45dvh;
 
-  & > * {
-    width: 50%;
-  }
+    & > * {
+        width: 50%;
+    }
 }
 
 .header__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 
-  position: relative;
+    position: relative;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .header__image-text {
-  color: white;
+    color: white;
 }
 
 .header__image-src {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  object-fit: cover;
+    object-fit: cover;
 
-  position: absolute;
-  z-index: -1;
+    position: absolute;
+    z-index: -1;
 }
 
 .header__reasons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .header__reason {
-  background-color: #e5ffe5;
-  border-radius: 10px;
+    background-color: #e5ffe5;
+    border-radius: 10px;
 
-  padding-inline: 12px;
-  padding-block: 7px;
+    padding-inline: 12px;
+    padding-block: 7px;
 
-  font-size: 12px;
-  font-weight: 700;
+    font-size: 12px;
+    font-weight: 700;
 }
 /* Header end */
 
 /* Plants section start */
 .plants__items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .plants__item.item {
-  width: 17%;
-  aspect-ratio: 3 / 5;
+    width: 17%;
+    aspect-ratio: 3 / 5;
 
-  border-radius: 25px;
-  overflow: hidden;
+    border-radius: 25px;
+    overflow: hidden;
 
-  position: relative;
+    position: relative;
 
-  &::after,
-  &::before {
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 15px;
-    padding-block: 7px;
-    padding-inline: 10px;
+    &::after,
+    &::before {
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 15px;
+        padding-block: 7px;
+        padding-inline: 10px;
 
-    position: absolute;
-    left: 5px;
-  }
-  &::before {
-    content: attr(data-top-text);
-    top: 5px;
-  }
-  &::after {
-    content: attr(data-bottom-text);
-    bottom: 5px;
-  }
+        position: absolute;
+        left: 5px;
+    }
+    &::before {
+        content: attr(data-top-text);
+        top: 5px;
+    }
+    &::after {
+        content: attr(data-bottom-text);
+        bottom: 5px;
+    }
 
-  & > .item__img {
-    height: 100%;
+    & > .item__img {
+        height: 100%;
 
-    object-fit: cover;
-  }
+        object-fit: cover;
+    }
 }
 
 /* Plants section end */
 
 /* Ecology section start */
 .ecology__items {
-  display: flex;
+    display: flex;
 }
 
 .item.ecology__item {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
-  &::after {
-    content: attr(data-center-text);
+    &::after {
+        content: attr(data-center-text);
 
-    font-size: 25px;
-    font-weight: 800;
-    color: white;
-    text-shadow: 0 0 2px black;
+        font-size: 25px;
+        font-weight: 800;
+        color: white;
+        text-shadow: 0 0 2px black;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-  & > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 /* Ecology section end */
 
@@ -264,28 +268,28 @@ main > section {
     display: flex;
 }
 
-.info__img, .info__text{
+.info__img, .info__text {
     width: 50%;
 }
 
 .info__img {
-  position: relative;
+    position: relative;
 }
 
 .info__img-main {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 35px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 35px;
 }
 
 .info__img-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  width: 70px;
+    width: 70px;
 }
 
 .info__text {
@@ -299,21 +303,79 @@ main > section {
 }
 /* Info section end */
 
+/* Requests start */
+.requests {
+    background-color: white;
+    padding-top: 35px;
+}
+
+
+.requests__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding-bottom: 20px;
+
+    & > input {
+        width: 65%;
+        height: 30px;
+        
+        outline: none;
+        padding-inline: 5px;
+
+        &::placeholder {
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    & > button {
+        font-family: 'Montserrat', sans-serif;
+
+        background-color: white;
+        border-radius: 25px;
+        padding: 5px 10px;
+        border: none;
+        box-shadow: 0 0 3px gray;
+
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+
+        transition: background-color 0.2s ease-in-out;
+
+        & > span {
+            display: inline-block;
+            width: 20px;
+        }
+        
+        &:hover {
+            background-color: rgb(237, 237, 237);
+        }
+
+        &:active {
+            background-color: rgb(218, 218, 218);
+        }
+    }
+}
+/* Requests end */
+
 @media screen and (max-width: 400px) {
-  .nav {
-    width: 100%;
-    height: fit-content;
-  }
+    .nav {
+        width: 100%;
+        height: fit-content;
+    }
 
-  .nav__btns {
-    flex-direction: row;
-  }
+    .nav__btns {
+        flex-direction: row;
+    }
 
-  .nav__btn {
-    margin: 0 auto;
-  }
+    .nav__btn {
+        margin: 0 auto;
+    }
 
-  .nav__btn-link::after {
-    content: none;
-  }
+    .nav__btn-link::after {
+        content: none;
+    }
 }

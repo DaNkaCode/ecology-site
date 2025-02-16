@@ -1,227 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ecology</title>
-        <link rel="stylesheet" href="./src/css/style.css">
-    </head>
-    <body>
-        <img src="./src/img/bg.svg" alt="" class="bg-image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecology</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <img src="./src/img/bg.svg" alt="" class="bg-image" />
 
-        <nav class="nav">
-            <ul class="nav__btns">
-                <li class="nav__btn">
-                    <a
-                        href="#!"
-                        class="nav__btn-link"
-                        data-title="Планета!"
-                    ><img
-                            class="nav__btn-image"
-                            src="./src/img/planet.svg"
-                            alt=""
-                        ></a>
-                </li>
-                <li class="nav__btn">
-                    <a href="#!" class="nav__btn-link"><img
-                            class="nav__btn-image"
-                            src="./src/img/plant.svg"
-                            alt=""
-                        ></a>
-                </li>
-                <li class="nav__btn">
-                    <a href="#!" class="nav__btn-link"><img
-                            class="nav__btn-image"
-                            src="./src/img/news.svg"
-                            alt=""
-                        ></a>
-                </li>
-                <li class="nav__btn">
-                    <a href="#!" class="nav__btn-link"><img
-                            class="nav__btn-image"
-                            src="./src/img/recycle.svg"
-                            alt=""
-                        ></a>
-                </li>
-            </ul>
-        </nav>
+    <nav class="nav">
+      <ul class="nav__btns">
+        <li class="nav__btn">
+          <a href="#!" class="nav__btn-link" data-title="Планета!"
+            ><img class="nav__btn-image" src="./src/img/planet.svg" alt=""
+          /></a>
+        </li>
+        <li class="nav__btn">
+          <a href="#!" class="nav__btn-link"
+            ><img class="nav__btn-image" src="./src/img/plant.svg" alt=""
+          /></a>
+        </li>
+        <li class="nav__btn">
+          <a href="#!" class="nav__btn-link"
+            ><img class="nav__btn-image" src="./src/img/news.svg" alt=""
+          /></a>
+        </li>
+        <li class="nav__btn">
+          <a href="#!" class="nav__btn-link"
+            ><img class="nav__btn-image" src="./src/img/recycle.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
-        <header class="header">
-            <div class="container">
-                <h1 class="header__title">Наша планета</h1>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Наша планета</h1>
 
-                <section class="header__facts">
-                    <div class="header__image">
-                        <h3 class="header__image-text">
-                            Несколько фактов о нашей планете
-                        </h3>
-                        <img
-                            src="./src/img/intro2.jpg"
-                            alt=""
-                            class="header__image-src"
-                        >
-                    </div>
+        <section class="header__facts">
+          <div class="header__image">
+            <h3 class="header__image-text">Несколько фактов о нашей планете</h3>
+            <img src="./src/img/intro2.jpg" alt="" class="header__image-src" />
+          </div>
 
-                    <div class="header__reasons">
-                        <span class="header__reason">Это наш дом</span>
-                        <span class="header__reason"
-                        >Это дом братьев наших меньших</span>
-                        <span class="header__reason"
-                        >Она требует бережного отношения</span>
-                    </div>
-                </section>
+          <div class="header__reasons">
+            <span class="header__reason">Это наш дом</span>
+            <span class="header__reason">Это дом братьев наших меньших</span>
+            <span class="header__reason">Она требует бережного отношения</span>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="plants">
+        <div class="container">
+          <h2 class="section-title plants__title">
+            А что такое растения?
+            <span><img src="./src/img/plant.svg" alt="Plant" /></span>
+          </h2>
+
+          <ul class="plants__items">
+            <li
+              class="plants__item item"
+              data-top-text="Растение - это..."
+              data-bottom-text="Дыхание"
+            >
+              <img src="./src/img/plant0.jpg" alt="" class="item__img" />
+            </li>
+            <li
+              class="plants__item item"
+              data-top-text="Растение - это..."
+              data-bottom-text="Изящность"
+            >
+              <img src="./src/img/plant1.jpg" alt="" class="item__img" />
+            </li>
+            <li
+              class="plants__item item"
+              data-top-text="Растение - это..."
+              data-bottom-text="Жизнь"
+            >
+              <img src="./src/img/plant2.jpg" alt="" class="item__img" />
+            </li>
+            <li
+              class="plants__item item"
+              data-top-text="Растение - это..."
+              data-bottom-text="Уют"
+            >
+              <img src="./src/img/plant3.jpg" alt="" class="item__img" />
+            </li>
+            <li
+              class="plants__item item"
+              data-top-text="Растение - это..."
+              data-bottom-text="Искусство"
+            >
+              <img src="./src/img/plant4.jpg" alt="" class="item__img" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="ecology">
+        <div class="container">
+          <h2 class="section-title ecology__title">
+            Где узнать об экологии?
+            <span><img src="./src/img/news.svg" alt="" /></span>
+          </h2>
+
+          <ul class="ecology__items">
+            <li class="ecology__item item" data-center-text="Интернет">
+              <img src="./src/img/internet.jpg" alt="" class="item__img" />
+            </li>
+            <li class="ecology__item item" data-center-text="Мероприятия">
+              <img src="./src/img/events.jpg" alt="" class="item__img" />
+            </li>
+            <li class="ecology__item item" data-center-text="Друзья">
+              <img src="./src/img/friends.jpg" alt="" class="item__img" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <h2 class="section-title">
+            Где узнать об экологии?
+            <span><img src="./src/img/recycle.svg" alt="" /></span>
+          </h2>
+
+          <div class="info__content">
+            <div class="info__img">
+              <img class="info__img-main" src="./src/img/land0.jpg" alt="" />
+              <img class="info__img-icon" src="./src/img/recycle.svg" alt="" />
             </div>
-        </header>
 
-        <main class="main">
-            <section class="plants">
-                <div class="container">
-                    <h2 class="section-title plants__title">
-                        А что такое растения? <span><img
-                                src="./src/img/plant.svg"
-                                alt="Plant"
-                            ></span>
-                    </h2>
+            <div class="info__text">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                accusantium? Quis molestias voluptas perspiciatis hic cum
+                beatae, quia fuga in nam unde quasi animi architecto modi
+                dolores, debitis iure explicabo?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <ul class="plants__items">
-                        <li
-                            class="plants__item item"
-                            data-top-text="Растение - это..."
-                            data-bottom-text="Дыхание"
-                        >
-                            <img
-                                src="./src/img/plant0.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                        <li
-                            class="plants__item item"
-                            data-top-text="Растение - это..."
-                            data-bottom-text="Изящность"
-                        >
-                            <img
-                                src="./src/img/plant1.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                        <li
-                            class="plants__item item"
-                            data-top-text="Растение - это..."
-                            data-bottom-text="Жизнь"
-                        >
-                            <img
-                                src="./src/img/plant2.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                        <li
-                            class="plants__item item"
-                            data-top-text="Растение - это..."
-                            data-bottom-text="Уют"
-                        >
-                            <img
-                                src="./src/img/plant3.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                        <li
-                            class="plants__item item"
-                            data-top-text="Растение - это..."
-                            data-bottom-text="Искусство"
-                        >
-                            <img
-                                src="./src/img/plant4.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </section>
+      <section class="requests">
+        <div class="container">
+          <h2 class="section-title">
+            Давай беречь планету вместе. Запишитесь к нам:
+          </h2>
 
-            <section class="ecology">
-                <div class="container">
-                    <h2 class="section-title ecology__title">
-                        Где узнать об экологии? <span><img
-                                src="./src/img/news.svg"
-                                alt=""
-                            ></span>
-                    </h2>
+          <form action="#!" class="requests__form">
+            <input type="text" placeholder="Имя" />
+            <input type="email" placeholder="Почта" />
 
-                    <ul class="ecology__items">
-                        <li
-                            class="ecology__item item"
-                            data-center-text="Интернет"
-                        >
-                            <img
-                                src="./src/img/internet.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                        <li
-                            class="ecology__item item"
-                            data-center-text="Мероприятия"
-                        >
-                            <img
-                                src="./src/img/events.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                        <li
-                            class="ecology__item item"
-                            data-center-text="Друзья"
-                        >
-                            <img
-                                src="./src/img/friends.jpg"
-                                alt=""
-                                class="item__img"
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="info">
-                <div class="container">
-                    <h2 class="section-title">
-                        Где узнать об экологии? <span><img
-                                src="./src/img/recycle.svg"
-                                alt=""
-                            ></span>
-                    </h2>
-
-                    <div class="info__content">
-                        <div class="info__img">
-                            <img
-                                class="info__img-main"
-                                src="./src/img/land0.jpg"
-                                alt=""
-                            >
-                            <img
-                                class="info__img-icon"
-                                src="./src/img/recycle.svg"
-                                alt=""
-                            >
-                        </div>
-
-                        <div class="info__text">
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ab, accusantium? Quis
-                                molestias voluptas perspiciatis hic cum beatae,
-                                quia fuga in nam unde quasi animi architecto
-                                modi dolores, debitis iure explicabo?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+            <button>
+              Записаться <span><img src="./src/img/fire.svg" alt="" /></span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
